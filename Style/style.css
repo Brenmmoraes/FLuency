@@ -1,0 +1,73 @@
+body{
+    background: rgb(147,107,176);
+    background: linear-gradient(135deg, rgba(147,107,176,1) 0%, #f446aa 85%);
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.478);
+   
+}
+ .container{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;   
+
+}
+.profile__header img{
+    margin-top: 32px;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+.profile__about h1{
+    font-family: "Major Mono Display", serif;
+}
+.profile__about h2{
+    font-family: "Major Mono Display", serif;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: 24px;
+}
+.profile__about p{
+    font-family: "Afacad Flux", serif;
+    font-size: 18px;
+}
+.links ul{
+    list-style: none;
+}
+.links a{
+    display: flex; /*sem ele o align-items não funciona */
+    text-decoration: none;
+    align-items: center;   /*alinha na vertical A propriedade "align-items" é usada em elementos que possuem o valor "display: flex" aplicado a eles. Ela controla o alinhamento vertical dos itens filhos dentro do elemento flex. Com "align-items", é possível alinhar os itens na parte superior, e centralizar ou alinhar itens na parte inferior do contêiner flex.*/
+    height: 40px;
+    justify-content: center; /*alinha na horizontal*/
+    border: solid 1px #ff14c850;
+    border-radius: 24px;
+    font-family: "Afacad Flux", serif;
+    color:  rgba(255, 255, 255, 0.688);
+}
+.links a:hover{
+    color: rgb(102, 63, 129);
+    
+}
+.links li{
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 24px;
+    margin: auto;
+    margin-bottom: 16px;  
+    width: 350px;
+}
+.links li:hover{
+    background-color: rgba(255, 255, 255, 0.34);
+}
+.links{
+    margin-bottom: 56px;
+   
+}
+.socials{
+    height: 16px;
+}
+.links img{
+    margin-left: -24px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
