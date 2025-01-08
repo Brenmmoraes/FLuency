@@ -1,75 +1,108 @@
+/*body, .container, .links li, .links a {
+    border: 1px solid red;
+  } 
+*/
+    
+
 body{
     background: rgb(147,107,176);
     background: linear-gradient(135deg, rgba(147,107,176,1) 0%, #f446aa 85%);
-    height: 100vh;
-    width: 100vh;
+    min-width:100%;
+    min-height: 100vh;
     color: rgba(255, 255, 255, 0.708);
-   
+    display: flex; 
+    align-items: center; 
 }
  .container{
-    width: 700px;
+    max-width: 80%;
+    padding: 16px;
     margin: 0 auto;
     text-align: center;   
-
 }
 .profile__header img{
     margin-top: 32px;
     border-radius: 100%;
+    border:solid 4px #ffe9fa21;
     width: 200px;
-    height: 200px;
+    height: 200px;    
 }
 .profile__about h1{
     font-family: "Major Mono Display", serif;
+    margin: 0;
 }
 .profile__about h2{
-    font-family: "Major Mono Display", serif;
-    font-size: 20px;
-    margin-top: -5px;
+    font-family: "Afacad Flux", serif;
+    font-size: 22px;
     margin-bottom: 24px;
+    font-weight: 200;
 }
 .profile__about p{
     font-family: "Afacad Flux", serif;
     font-size: 18px;
+    font-weight: 200;
 }
 .links ul{
     list-style: none;
+    padding: 0; 
+    margin: 0;     
 }
 .links a{
     display: flex; /*sem ele o align-items não funciona */
-    text-decoration: none;
+    justify-content: space-between;
     align-items: center;   /*alinha na vertical A propriedade "align-items" é usada em elementos que possuem o valor "display: flex" aplicado a eles. Ela controla o alinhamento vertical dos itens filhos dentro do elemento flex. Com "align-items", é possível alinhar os itens na parte superior, e centralizar ou alinhar itens na parte inferior do contêiner flex.*/
-    height: 40px;
-    justify-content: center; /*alinha na horizontal*/
-    border: solid 1px #ff14c850;
+    height: 32px;
+    justify-content: left; 
+    border: solid 1px #ff14c864;
     border-radius: 24px;
     font-family: "Afacad Flux", serif;
-    color:  rgba(255, 255, 255, 0.688);
+    color:  rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    margin: 0;
 }
 .links a:hover{
-    color: rgb(102, 63, 129);
+    color: rgb(65, 34, 87);
     
 }
 .links li{
-    background-color: rgba(255, 255, 255, 0.164);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.207);
     border-radius: 24px;
-    margin: auto;
-    margin-bottom: 16px;  
-    width: 350px;
+    margin: 16px auto;    
 }
 .links li:hover{
     background-color: rgba(255, 255, 255, 0.34);
 }
 .links{
-    margin-bottom: 56px;
-   
-}
-.socials{
-    height: 16px;
-}
+    margin-bottom: 64px;
+ }
 .links img{
-    margin-left: -24px;
-    margin-right: 8px;
+    height: 24px;
     display: flex;
-    align-items: center;
+    align-items: center;    
+    padding-left: 4px;
+ }
+.text{
+    flex-grow: 0.9; 
+    text-align: center; 
 }
 
+@media screen and (max-width:480px) {
+    .profile__header img {
+        width: 150px;
+        height: 150px;
+    }
+    .profile__about h1{
+        font-family: "Major Mono Display", serif;
+        font-size: 24px;
+    }
+    .links li {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+    .links a {
+        font-size: 14px;
+    }
+}
