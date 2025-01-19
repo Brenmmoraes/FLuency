@@ -24,7 +24,12 @@ body{
     border-radius: 100%;
     border:solid 4px #ffe9fa21;
     width: 200px;
-    height: 200px;    
+    height: 200px;   
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    
+     
 }
 .profile__about h1{
     font-family: "Major Mono Display", serif;
@@ -52,8 +57,6 @@ body{
     align-items: center;   /*alinha na vertical A propriedade "align-items" é usada em elementos que possuem o valor "display: flex" aplicado a eles. Ela controla o alinhamento vertical dos itens filhos dentro do elemento flex. Com "align-items", é possível alinhar os itens na parte superior, e centralizar ou alinhar itens na parte inferior do contêiner flex.*/
     height: 32px;
     justify-content: left; 
-    border: solid 1px #ff14c864;
-    border-radius: 24px;
     font-family: "Afacad Flux", serif;
     color:  rgba(255, 255, 255, 0.76);
     font-size: 16px;
@@ -69,7 +72,13 @@ body{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.207);
     border-radius: 24px;
-    margin: 16px auto;    
+    margin: 16px auto;   
+    background: rgba(246, 235, 247, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(246, 235, 247, 0.2); 
 }
 .links li:hover{
     background-color: rgba(255, 255, 255, 0.34);
